@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><strong>main</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>main</code></h1>
+
+<p>Name:Snooker app</p>
+<p>A simple Snooker Game
+<p>Version 2.0
+<p>Nov.27.2013
+</p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Author</strong>: Bingxing Xu,Chong Liu</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#setSkin">setSkin&nbsp;()</a></td>
+	<td class="summary">load skin</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#splash">splash&nbsp;()</a></td>
+	<td class="summary">Setup Splash Screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#buzzLogo">buzzLogo&nbsp;()</a></td>
+	<td class="summary">Buzzing Splashing screen animation</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#init">init&nbsp;(event)</a></td>
+	<td class="summary">Initializing Program</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#optionMenu">optionMenu&nbsp;()</a></td>
+	<td class="summary">Option Menu</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gameStage">gameStage&nbsp;()</a></td>
+	<td class="summary">Game stages</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#pauseMenu">pauseMenu&nbsp;()</a></td>
+	<td class="summary">In game pause menu</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#resumeGame">resumeGame&nbsp;(event)</a></td>
+	<td class="summary">Resume Game</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#restartGame">restartGame&nbsp;(event)</a></td>
+	<td class="summary">New Game</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#music">music&nbsp;(event)</a></td>
+	<td class="summary">BGM pause</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#onePlayerMode">onePlayerMode&nbsp;()</a></td>
+	<td class="summary">One player mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#lanMenu">lanMenu&nbsp;(event)</a></td>
+	<td class="summary">LAN Menue</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#serverMode">serverMode&nbsp;(event)</a></td>
+	<td class="summary">server mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#clientMode">clientMode&nbsp;(event)</a></td>
+	<td class="summary">client mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#lanTwoplayer">lanTwoplayer&nbsp;(event)</a></td>
+	<td class="summary">Lan two play mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#localTwoplayer">localTwoplayer&nbsp;(event)</a></td>
+	<td class="summary">local two players mode</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#upperMenu">upperMenu&nbsp;(event, target)</a></td>
+	<td class="summary">Menue Back</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#foulMessage">foulMessage&nbsp;()</a></td>
+	<td class="summary">show foul message</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setBalls">setBalls&nbsp;()</a></td>
+	<td class="summary">create all the balls</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setBlack">setBlack&nbsp;()</a></td>
+	<td class="summary">set up black ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setPink">setPink&nbsp;()</a></td>
+	<td class="summary">set up pink ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setBlue">setBlue&nbsp;()</a></td>
+	<td class="summary">set up blue ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setGreen">setGreen&nbsp;()</a></td>
+	<td class="summary">set up green ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setBrown">setBrown&nbsp;()</a></td>
+	<td class="summary">set up brown ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setYellow">setYellow&nbsp;()</a></td>
+	<td class="summary">set up yellow ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setReds">setReds&nbsp;()</a></td>
+	<td class="summary">set up red balls</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#resetColorBall">resetColorBall&nbsp;(colorBallTYPE)</a></td>
+	<td class="summary">reset color ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#createCueBall">createCueBall&nbsp;(event)</a></td>
+	<td class="summary">Create Cue ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cueBallCollision">cueBallCollision&nbsp;(self, event)</a></td>
+	<td class="summary">cueBallCollision</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#shot">shot&nbsp;(event)</a></td>
+	<td class="summary">shot the Cue ball</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#createPockets">createPockets&nbsp;()</a></td>
+	<td class="summary">Create pockets</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setPocket">setPocket&nbsp;(self, event)</a></td>
+	<td class="summary">Sets up pockets</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#gameIsOver">gameIsOver&nbsp;()</a></td>
+	<td class="summary">Game over</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#physics">physics</a></td>
+	<td class="summary">Reference
+<p>Corona Labs Inc.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#searchWifi">searchWifi</a></td>
+	<td class="summary">display Text</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#numPlayers">numPlayers</a></td>
+	<td class="summary">make connection</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#numberOfServer">numberOfServer</a></td>
+	<td class="summary">Choose server</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#item.text">item.text</a></td>
+	<td class="summary">server name and IP</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name = "setSkin"></a>
+    <strong>setSkin&nbsp;()</strong>
+    </dt>
+    <dd>
+    load skin
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "splash"></a>
+    <strong>splash&nbsp;()</strong>
+    </dt>
+    <dd>
+    Setup Splash Screen Corona Labs Inc, function splash()
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "buzzLogo"></a>
+    <strong>buzzLogo&nbsp;()</strong>
+    </dt>
+    <dd>
+    Buzzing Splashing screen animation Corona Labs Inc, function buzzLogo()
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "init"></a>
+    <strong>init&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    Initializing Program
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "optionMenu"></a>
+    <strong>optionMenu&nbsp;()</strong>
+    </dt>
+    <dd>
+    Option Menu
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gameStage"></a>
+    <strong>gameStage&nbsp;()</strong>
+    </dt>
+    <dd>
+    Game stages
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "pauseMenu"></a>
+    <strong>pauseMenu&nbsp;()</strong>
+    </dt>
+    <dd>
+    In game pause menu
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "resumeGame"></a>
+    <strong>resumeGame&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    Resume Game
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "restartGame"></a>
+    <strong>restartGame&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    New Game
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "music"></a>
+    <strong>music&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    BGM pause
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "onePlayerMode"></a>
+    <strong>onePlayerMode&nbsp;()</strong>
+    </dt>
+    <dd>
+    One player mode
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "lanMenu"></a>
+    <strong>lanMenu&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    LAN Menue
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "serverMode"></a>
+    <strong>serverMode&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    server mode
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "clientMode"></a>
+    <strong>clientMode&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    client mode
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "lanTwoplayer"></a>
+    <strong>lanTwoplayer&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    Lan two play mode
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        Setup Up Player Score Board for two players</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "localTwoplayer"></a>
+    <strong>localTwoplayer&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    local two players mode
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "upperMenu"></a>
+    <strong>upperMenu&nbsp;(event, target)</strong>
+    </dt>
+    <dd>
+    Menue Back
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+        <li><span class="parameter">target</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "foulMessage"></a>
+    <strong>foulMessage&nbsp;()</strong>
+    </dt>
+    <dd>
+    show foul message
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setBalls"></a>
+    <strong>setBalls&nbsp;()</strong>
+    </dt>
+    <dd>
+    create all the balls
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setBlack"></a>
+    <strong>setBlack&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up black ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setPink"></a>
+    <strong>setPink&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up pink ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setBlue"></a>
+    <strong>setBlue&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up blue ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setGreen"></a>
+    <strong>setGreen&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up green ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setBrown"></a>
+    <strong>setBrown&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up brown ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setYellow"></a>
+    <strong>setYellow&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up yellow ball
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setReds"></a>
+    <strong>setReds&nbsp;()</strong>
+    </dt>
+    <dd>
+    set up red balls
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "resetColorBall"></a>
+    <strong>resetColorBall&nbsp;(colorBallTYPE)</strong>
+    </dt>
+    <dd>
+    reset color ball
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">colorBallTYPE</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "createCueBall"></a>
+    <strong>createCueBall&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    Create Cue ball
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        check if the legal position of cue ball</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cueBallCollision"></a>
+    <strong>cueBallCollision&nbsp;(self, event)</strong>
+    </dt>
+    <dd>
+    cueBallCollision
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+        </li>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "shot"></a>
+    <strong>shot&nbsp;(event)</strong>
+    </dt>
+    <dd>
+    shot the Cue ball  Corona Labs Inc, function cueShot( event )
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "createPockets"></a>
+    <strong>createPockets&nbsp;()</strong>
+    </dt>
+    <dd>
+    Create pockets
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setPocket"></a>
+    <strong>setPocket&nbsp;(self, event)</strong>
+    </dt>
+    <dd>
+    Sets up pockets
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+        </li>
+        <li><span class="parameter">event</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "gameIsOver"></a>
+    <strong>gameIsOver&nbsp;()</strong>
+    </dt>
+    <dd>
+    Game over
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Fields"></a>Fields</h2>
+    <dl class="function">
+    <dt>
+    <a name = "physics"></a>
+    <strong>physics</strong>
+    </dt>
+    <dd>
+    Reference
+<p>Corona Labs Inc.  SimplePoolPlus sample project (Version: 1.3)
+<p>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "searchWifi"></a>
+    <strong>searchWifi</strong>
+    </dt>
+    <dd>
+    display Text
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "numPlayers"></a>
+    <strong>numPlayers</strong>
+    </dt>
+    <dd>
+    make connection
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "numberOfServer"></a>
+    <strong>numberOfServer</strong>
+    </dt>
+    <dd>
+    Choose server
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "item.text"></a>
+    <strong>item.text</strong>
+    </dt>
+    <dd>
+    server name and IP
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3.12</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
